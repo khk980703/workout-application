@@ -14,7 +14,7 @@ const navItems = [
   },
   {
     label: 'Dashboard',
-    href: '/dashboard',
+    href: '/',
   },
   {
     label: 'Mission',

@@ -1,9 +1,9 @@
-import AppLayout from '../../components/layout/AppLayout'
+import MissionLayout from '../../components/layout/MissionLayout'
 
 export default function MissionPage() {
   return (
-    <AppLayout>
+    <MissionLayout>
       <div>Mission</div>
-    </AppLayout>
+    </MissionLayout>
   )
 }

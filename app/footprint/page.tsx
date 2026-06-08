@@ -1,9 +1,9 @@
-import AppLayout from '../../components/layout/AppLayout'
+import FootprintLayout from '@/components/layout/FootprintLayout'
 
 export default function FootprintPage() {
   return (
-    <AppLayout>
+    <FootprintLayout>
       <div>Footprint</div>
-    </AppLayout>
+    </FootprintLayout>
   )
 }

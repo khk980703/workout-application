@@ -1,9 +1,9 @@
-import AppLayout from '../../components/layout/AppLayout'
+import SocialLayout from '../../components/layout/SocialLayout'
 
 export default function SocialPage() {
   return (
-    <AppLayout>
+    <SocialLayout>
       <div>Social</div>
-    </AppLayout>
+    </SocialLayout>
   )
 }

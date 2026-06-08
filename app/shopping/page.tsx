@@ -1,9 +1,9 @@
-import AppLayout from '../../components/layout/AppLayout'
+import ShoppingLayout from '../../components/layout/ShoppingLayout'
 
 export default function ShoppingPage() {
   return (
-    <AppLayout>
+    <ShoppingLayout>
       <div>Shopping</div>
-    </AppLayout>
+    </ShoppingLayout>
   )
 }
