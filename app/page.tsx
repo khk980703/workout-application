@@ -1,7 +1,18 @@
 import DashboardLayout from '../components/layout/DashboardLayout'
 import Image from 'next/image'
+import { redirect } from 'next/navigation'
+import { createClient } from '@/lib/supabase/server'
 
-export default function Home() {
+export default async function Home() {
+  const supabase = await createClient()
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) {
+    redirect('/login')
+  }
+
   return (
     <DashboardLayout>
       <div className="flex flex-1 h-full flex-col items-center justify-between gap-4 p-6">
