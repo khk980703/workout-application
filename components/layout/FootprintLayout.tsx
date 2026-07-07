@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import BottomNavbar from './BottomNavbar'
 import TopNavbar from './TopNavbar'
+import SettingsModal from './SettingsModal'
 
 interface FootprintLayoutProps {
   children: ReactNode
@@ -12,7 +13,7 @@ export default function FootprintLayout({ children }: FootprintLayoutProps) {
       <TopNavbar>
         <div className="flex w-full items-center justify-between">
           <div>Status</div>
-          <div>Setting</div>
+          <SettingsModal />
         </div>
       </TopNavbar>
 
@@ -24,3 +25,5 @@ export default function FootprintLayout({ children }: FootprintLayoutProps) {
     </div>
   )
 }
+
+// change Setting with a button that opens a modal with a form that has sign out option
